@@ -21,7 +21,7 @@ namespace AppAngelaAbonos.Views
         {
             InitializeComponent();
 
-
+            string sss = "";
 
 
         }
