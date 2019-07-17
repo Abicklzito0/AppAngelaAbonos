@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAngelaAbonos.Views.ItemDetailPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Eliminar" Clicked="Save_Clicked"  />
+    </ContentPage.ToolbarItems>
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="ID:" FontSize="Medium" />
+        <Label Text="{Binding Item.Id}" TextColor="Blue" FontSize="Small"/>
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Label Text="{Binding Item.Nombre}" TextColor="Blue"  FontSize="Small"/>
+        <Label Text="Direccion:" FontSize="Medium" />
+        <Label Text="{Binding Item.Direccion}" TextColor="Blue"  FontSize="Small"/>
+        <Label Text="Telefono:" FontSize="Medium" />
+        <Label Text="{Binding Item.Telefono}" TextColor="Blue"  FontSize="Small"/>
+    </StackLayout>
+</ContentPage>

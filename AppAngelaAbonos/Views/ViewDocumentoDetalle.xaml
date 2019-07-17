@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppAngelaAbonos.Views.ViewDocumentoDetalle"
+              Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Eliminar" Clicked="Save_Clicked"  />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Folio : "></Label>
+            <Label Text="{Binding Documento.Id}" TextColor="Blue"></Label>
+            <Label Text="{Binding Documento.Descripcion}" TextColor="Blue"></Label>
+            <Label Text="{Binding Documento.Total,StringFormat='Importe : {0:c}'}"></Label>
+         
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
